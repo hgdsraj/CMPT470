@@ -1,1 +1,25 @@
+Part 1:
+HTTP/1.1 200 OK
+Status code 200
 
+Part 2:
+If modified since includes HTTP/1.1 304 Not Modified
+And does not include the page contents (as it was not modified)
+
+Part 3:
+Redirect
+Got HTTP/1.1 301 Moved Permanently
+Includes HTML stating the document has permanently moved as well as its new location.
+
+Command-Line Requests
+-I in curl included the info instead of the body (content)
+-esS did not work for me:
+    request:
+        GET -esS /~ggbaker/470e3/ HTTP/1.1
+        Host: www.sfu.ca
+        Connection: close
+    response header:
+        HTTP/1.1 400 Bad Request
+
+
+I promise I played with the developer tools (Chrome)
