@@ -14,4 +14,9 @@ services:
   # database server
   db:
     image: "postgres:latest"
+    environment:
+      - POSTGRES_USER=demo
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_DB=demodb
+
 
