@@ -1,0 +1,3 @@
+The "notes" section of creating a contact allows unescaped javascript. (XSS)
+CSRF through the "notes" section described above
+ANy non alphanumeric character in first name and last name results in a 500 - possible SQL injection vector?
