@@ -6,9 +6,9 @@ services:
   app:
     build:
       context: .
-      dockerfile: Dockerfile-web
+      dockerfile: Dockerfile-app
     ports:
-      - "3000:3000"
+      - 3000:3000
     depends_on:
       - db
   db:
